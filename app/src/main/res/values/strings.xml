@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rendez-Doc</string>
+    <string name="title_activity_splash">Rendez-Doc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="RechercheBtn">Rechercher un médecin proche de vous  </string>
+    <string-array name="specialiter_array">
+        <item>Généralist</item>
+        <item>Cardiolog</item>
+        <item>Dermatolog</item>
+        <item>Dentiste</item>
+        <item>Ophtalmolog</item>
+
+    </string-array>
+</resources>
