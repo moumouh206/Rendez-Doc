@@ -48,7 +48,7 @@ public class NavigationDrawerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView =inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
-       // recyclerView=(RecyclerView)rootView.findViewById(R.id.recyclerview);
+        recyclerView=(RecyclerView)rootView.findViewById(R.id.rview);
         return rootView;
     }
 

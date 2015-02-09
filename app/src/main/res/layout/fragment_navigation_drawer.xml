@@ -16,15 +16,15 @@
             android:src="@drawable/logo"/>
     </LinearLayout>
 
-  <!--  <android.support.v7.widget.RecyclerView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/rview"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/linearLayout"
 
-    />-->
-<ListView
+    />
+<!--<ListView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@+id/linearLayout"></ListView>
+    android:layout_below="@+id/linearLayout"></ListView>-->
 </RelativeLayout>
