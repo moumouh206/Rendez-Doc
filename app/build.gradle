@@ -24,6 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
     compile project(':floatinActionButton')
+    compile project(':dSAvataImageView')
     compile 'me.relex:circleindicator:1.1.1@aar'
     compile 'me.drakeet.materialdialog:library:1.2.2'
     compile 'com.android.support:recyclerview-v7:21.0.3'

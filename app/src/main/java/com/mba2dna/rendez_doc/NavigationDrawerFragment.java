@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.xperi.avataimageview.DSAvatarImageView;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -29,6 +31,7 @@ import constants.Constants;
  */
 public class NavigationDrawerFragment extends Fragment {
     private RecyclerView recyclerView;
+    private TextView name, email;
 
     public static final String PREF_FILE_NAME = "testPref";
     public static final String KEY_USER_LEARNED_DRAWER = "user_learned_drawer";
@@ -58,21 +61,33 @@ public class NavigationDrawerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Typeface tl = Typeface.createFromAsset(getActivity().getAssets(),
+                Constants.fontLight);
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
+                Constants.fontBold);
+
         View rootView = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
+        name = (TextView) rootView.findViewById(R.id.name);
+        name.setTypeface(tf);
+        email = (TextView) rootView.findViewById(R.id.email);
+        email.setTypeface(tl);
+        DSAvatarImageView avataImageView=(DSAvatarImageView) rootView.findViewById(R.id.cicleIm);
+        avataImageView.setImageResource(R.drawable.profile);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.rview);
-        adapter=new recyclerAdapter(getActivity(),getData());
+        adapter = new recyclerAdapter(getActivity(), getData());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         return rootView;
     }
-    public static List<ItemRow> getData(){
-        List<ItemRow> row=new ArrayList<>();
-        int[] icons={R.drawable.ic_action_favorie,R.drawable.ic_action_agenda,R.drawable.ic_action_search_red,R.drawable.ic_action_setting};
-        String[] titles ={"Mes docteurs favories","Mes rendez-vous","Rechercher un docteur","Paramatres"};
-        for(int i=0;i<icons.length && i<titles.length ; i++){
-            ItemRow curr=new ItemRow();
-            curr.Title=titles[i];
-            curr.icon=icons[i];
+
+    public static List<ItemRow> getData() {
+        List<ItemRow> row = new ArrayList<>();
+        int[] icons = {R.drawable.ic_action_favorie, R.drawable.ic_action_agenda, R.drawable.ic_action_search, R.drawable.ic_action_setting};
+        String[] titles = {"Mes docteurs favories", "Mes rendez-vous", "Rechercher un docteur", "Paramatres"};
+        for (int i = 0; i < icons.length && i < titles.length; i++) {
+            ItemRow curr = new ItemRow();
+            curr.Title = titles[i];
+            curr.icon = icons[i];
             row.add(curr);
         }
         return row;
@@ -133,12 +148,12 @@ public class NavigationDrawerFragment extends Fragment {
 
             viewHolder.title.setText(current.Title);
             viewHolder.title.setTypeface(tl);
-            if(i==2){
+           /* if(i==2){
                 Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
                         Constants.fontBold);
                 viewHolder.title.setTypeface(tf);
                 viewHolder.title.setTextColor(getResources().getColor(R.color.accentColor));
-            }
+            }*/
             viewHolder.Icon.setImageResource(current.icon);
         }
 
