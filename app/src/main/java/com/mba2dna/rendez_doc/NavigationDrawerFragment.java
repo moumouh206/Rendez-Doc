@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.xperi.avataimageview.DSAvatarImageView;
 
@@ -135,7 +136,7 @@ public class NavigationDrawerFragment extends Fragment {
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int i) {
             View view = inflater.inflate(R.layout.navigation_drawer_item, parent, false);
-            MyViewHolder holder = new MyViewHolder(view);
+            MyViewHolder holder = new MyViewHolder(view,getActivity());
             return holder;
         }
 
@@ -162,14 +163,24 @@ public class NavigationDrawerFragment extends Fragment {
             return Rows.size();
         }
 
-        class MyViewHolder extends RecyclerView.ViewHolder {
+        class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
             TextView title;
             ImageView Icon;
+            Context contxt;
 
-            public MyViewHolder(View itemView) {
+            public MyViewHolder(View itemView,Context c) {
                 super(itemView);
+                contxt = c;
+                itemView.setClickable(true);
+                itemView.setOnClickListener(this);
                 title = (TextView) itemView.findViewById(R.id.ItemText);
                 Icon = (ImageView) itemView.findViewById(R.id.itemIcom);
+            }
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.closeDrawers();
+                Toast.makeText(contxt, "The Item Clicked is: " + getPosition(), Toast.LENGTH_SHORT).show();
+
             }
         }
     }
