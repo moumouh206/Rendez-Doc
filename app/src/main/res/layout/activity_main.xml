@@ -31,7 +31,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_action"
+        android:src="@drawable/ic_action_add"
         android:tint="@color/whiteColor"
         fab:fab_colorNormal="@color/accentColor"
         fab:fab_colorPressed="@color/accentColorPressed"
@@ -81,7 +81,7 @@
     <fragment
         android:id="@+id/navigationdrawer"
         android:name="com.mba2dna.rendez_doc.NavigationDrawerFragment"
-        android:layout_width="280dp"
+        android:layout_width="290dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:layout="@layout/fragment_navigation_drawer"

@@ -67,7 +67,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
     public static List<ItemRow> getData(){
         List<ItemRow> row=new ArrayList<>();
-        int[] icons={R.drawable.ic_action_favorie,R.drawable.ic_action_agenda,R.drawable.ic_action_search,R.drawable.ic_action_setting};
+        int[] icons={R.drawable.ic_action_favorie,R.drawable.ic_action_agenda,R.drawable.ic_action_search_red,R.drawable.ic_action_setting};
         String[] titles ={"Mes docteurs favories","Mes rendez-vous","Rechercher un docteur","Paramatres"};
         for(int i=0;i<icons.length && i<titles.length ; i++){
             ItemRow curr=new ItemRow();
@@ -130,8 +130,15 @@ public class NavigationDrawerFragment extends Fragment {
 
             Typeface tl = Typeface.createFromAsset(getActivity().getAssets(),
                     Constants.fontLight);
+
             viewHolder.title.setText(current.Title);
             viewHolder.title.setTypeface(tl);
+            if(i==2){
+                Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
+                        Constants.fontBold);
+                viewHolder.title.setTypeface(tf);
+                viewHolder.title.setTextColor(getResources().getColor(R.color.accentColor));
+            }
             viewHolder.Icon.setImageResource(current.icon);
         }
 
