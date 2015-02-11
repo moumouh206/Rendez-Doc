@@ -28,7 +28,7 @@ Developed by
 ---
 Mohamed Amine BIDA - <bida.mohamed@gmail.com>
 
-* [LinkedIn](https://www.linkedin.com/in/moumouh206)
+* [LinkedIn](https://dz.linkedin.com/pub/mohamed-amine-bida/53/790/287)
 * [Twitter](https://twitter.com/moumouh206)
 
 Thanks 
