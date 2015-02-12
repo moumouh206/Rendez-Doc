@@ -1,7 +1,7 @@
 # Rendez-Doc
 this app is for doctors , it helps users to get to the nearest doctors in town
 
-Project created for autolearning where I try to apply the new **Material Design** and Android good practices to develop a **Doctors Annuaire (Rendez-Docs)** application using a mocked list of **doctors list** as the domain of the application.
+Project created for autolearning where I try to apply the new **Material Design** and Android good practices to develop a **Doctors directory (Rendez-Docs)** application using a mocked list of **doctors list** as the domain of the application.
  
 Motivation
 ----
