@@ -3,11 +3,18 @@
     <color name="primaryColor">#25abce</color>
     <color name="primaryColorDark">#1489a3</color>
     <color name="primaryColorDarker">#114e5f</color>
-    <color name="accentColor">#ea484d</color>
-    <color name="accentColorPressed">#d24146</color>
+    <color name="accentColor">#1abc9c</color>
+    <color name="accentColorPressed">#16a085</color>
     <color name="whiteColor">#ffffff</color>
     <color  name="whiteColorDark">#e6e6e6</color>
     <color  name="light_blue_500">#e6e6e6</color>
     <color  name="grey_1000">#e6e6e6</color>
-
+    <color  name="grey">#eeeeee</color>
+    <color name="yallow_l">#f1b35e</color>
+    <color name="yallow_d">#ce8244</color>
+    <color name="red_l">#dc574e</color>
+    <color name="red_d">#b93d3b</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
 </resources>

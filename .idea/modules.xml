@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Rendez-Doc.iml" filepath="$PROJECT_DIR$/Rendez-Doc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wech Khessek.iml" filepath="$PROJECT_DIR$/Wech Khessek.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dSAvataImageView/dSAvataImageView.iml" filepath="$PROJECT_DIR$/dSAvataImageView/dSAvataImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/floatinActionButton/floatinActionButton.iml" filepath="$PROJECT_DIR$/floatinActionButton/floatinActionButton.iml" />

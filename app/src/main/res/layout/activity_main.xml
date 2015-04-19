@@ -4,7 +4,8 @@
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/grey">
     <include
         android:id="@+id/appbar"
         layout="@layout/app_bar" />
@@ -17,7 +18,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.mba2dna.rendez_doc.MainActivity">
+        tools:context="com.mba2dna.whech_khessek.MainActivity">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,7 +81,7 @@
 
     <fragment
         android:id="@+id/navigationdrawer"
-        android:name="com.mba2dna.rendez_doc.NavigationDrawerFragment"
+        android:name="com.mba2dna.whech_khessek.NavigationDrawerFragment"
         android:layout_width="290dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

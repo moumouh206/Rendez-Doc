@@ -1,4 +1,4 @@
-package com.mba2dna.rendez_doc;
+package com.mba2dna.whech_khessek;
 
 
 import android.content.Context;
