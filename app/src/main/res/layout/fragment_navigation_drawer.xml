@@ -59,18 +59,23 @@
 
                 />
         </LinearLayout>
-        <com.xperi.avataimageview.DSAvatarImageView
-            android:id="@+id/cicleIm"
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:border_color="@color/accentColor"
-            app:border_width="2dp"
+            android:id="@+id/cicleIm"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="33dip"
+            app:riv_border_width="2dip"
+            app:riv_border_color="@color/accentColor"
+            app:riv_mutate_background="true"
 
+            app:riv_oval="true"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="18dp"
-            app:background_color="@color/whiteColor"
-            app:text_color="@color/accentColor"
-            />
+            android:layout_marginTop="18dp"/>
+
        <!-- <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
@@ -94,6 +99,7 @@
         android:layout_height="2dp"
         android:background="@color/accentColor"
         android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"></LinearLayout>
     <!--<ListView

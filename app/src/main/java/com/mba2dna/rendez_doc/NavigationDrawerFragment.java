@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.xperi.avataimageview.DSAvatarImageView;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -72,7 +72,7 @@ public class NavigationDrawerFragment extends Fragment {
         name.setTypeface(tf);
         email = (TextView) rootView.findViewById(R.id.email);
         email.setTypeface(tl);
-        DSAvatarImageView avataImageView=(DSAvatarImageView) rootView.findViewById(R.id.cicleIm);
+        RoundedImageView avataImageView=(RoundedImageView) rootView.findViewById(R.id.cicleIm);
         avataImageView.setImageResource(R.drawable.profile);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.rview);
         adapter = new recyclerAdapter(getActivity(), getData());

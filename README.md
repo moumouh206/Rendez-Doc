@@ -33,8 +33,8 @@ Mohamed Amine BIDA - <bida.mohamed@gmail.com>
 
 Thanks 
 ---
-- Sem.C.D
-- Aminatou
+- Farid
+
 
 
 License
